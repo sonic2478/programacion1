@@ -1,0 +1,56 @@
+2. Para inscribir a un estudiante en la universidad, debe cumplir con lo siguiente:
+    1. El estudiante debe ser mayor de edad (18 años o más).
+    2. Además, debe presentar al menos un documento oficial:
+        * INE
+        * Pasaporte
+
+INICIO
+    ESCRIBIR Por favor, inserta tu edad:
+    SI edad >= 18
+        ESCRIBIR Por favor, sube una copia de tu INE o pasaporte en formato PDF:
+    SINO
+        IMPRIMIR Lo sentimos, debes ser mayor de edad para entrar a esta universidad
+FIN 
+
+
+3. Pedir un número por teclado e imprimir la tabla del 1 al 10 multiplicando por ese número. (Doble, uno con mientras y otro con para).
+
+INICIO
+    num <- ESCRIBIR Dame un número para imprimir su tabla de multiplicar del 1 al 10:
+    acum <- 1
+    MIENTRAS acum <= 10
+        res <- acum * num
+        IMPRIMIR num x acum = res
+        PARA i DESDE 1 HASTA 10:
+            acum <- acum + 1
+        FINPARA
+    FINMIENTRAS
+FIN
+ 
+
+4. Construya un algoritmo que solicita números al usuario y haga la suma de todos ellos. El algoritmo debe solicitar números 
+siempre y cuando el número ingresado sea positivo, si el usuario ingresa un número no positivo el algoritmo debe terminar e imprimir
+la suma de los números positivos.
+
+INICIO
+    num <- ESCRIBIR Dame un número: 
+    suma <- 0
+    MIENTRAS num > 0
+        suma <- suma + num
+        num <- ESCRIBIR Dame un número:
+    FINMIENTRAS
+    SI num <= 0
+        IMPRIMIR suma
+    FINSI    
+FIN
+
+
+RETO EXTRA
+
+INICIO
+    usuario <- ESCRIBIR Escribe tu usuario: 
+    SI usuario == registro
+        pass <- ESCRIBIR Escribe tu contraseña: 
+        
+
+FIN

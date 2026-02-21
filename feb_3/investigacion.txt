@@ -1,0 +1,10 @@
+Acumulador: Un acumulador en programación es una variable que guarda un valor que se actualiza continuamente (incrementa o decrementa) 
+dentro de un bucle o serie de operaciones, sumando o restando valores variables en cada iteración.
+
+Contador: Es una variable numérica (generalmente entera) que se usa para llevar la cuenta de cuántas veces ocurre un evento o se repite
+ un bucle, incrementándose o decrementándose en una cantidad fija y constante (como +1, -1, o +2) en cada iteración, y que siempre 
+ debe ser inicializada a un valor (usualmente 0) antes de empezar a contar.
+
+ Bandera: Es una variable que actúa como una señal o interruptor para indicar el estado de una condición o evento específico dentro 
+ del código, controlando el flujo del programa, y suele ser booleana (verdadero/falso), aunque puede ser un número o cadena, 
+ funcionando como un "semáforo" que dirige las decisiones del software.

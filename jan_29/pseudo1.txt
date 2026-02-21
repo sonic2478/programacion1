@@ -1,0 +1,23 @@
+Calcular el area de un triangulo
+
+INICIO
+    LEER base, altura
+    area <- (base * altura) / 2
+    ESCRIBIR area
+FIN
+
+
+Pedir 3 calificaciones, calcular el promedio, si el resultado es mayor a 90 imprimir "Felicidades, tu promedio es:" mostrar cantidad y sino imprimir el promedio
+
+INICIO
+    LEER qualy1, qualy2, qualy3
+    promedio <- (qualy1 + qualy2 + qualy3) / 3
+    SI promedio > 90
+        ESCRIBIR "Felicidades, tu promedio es: " promedio
+    SINO
+        ESCRIBIR promedio
+    FIN SI
+FIN
+
+
+ 
