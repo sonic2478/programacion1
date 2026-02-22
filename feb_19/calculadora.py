@@ -32,19 +32,19 @@ def division(num1, num2):
 def postsuma(num):
     global acum
     resultado = acum + num
-    print(resultado)
+    print('Tu resultado es: ', resultado)
     acum = resultado
 
 def postresta(num):
     global acum
     resultado = acum - num
-    print(resultado)
+    print('Tu resultado es: ', resultado)
     acum = resultado
 
 def postmulti(num):
     global acum
     resultado = acum * num
-    print(resultado)
+    print('Tu resultado es: ', resultado)
     acum = resultado
 
 def postdivision(num):
