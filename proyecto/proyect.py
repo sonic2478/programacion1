@@ -77,7 +77,7 @@ while True:
                 psw = e[:tope]
                 lst.append(psw)
                 if psw == rest:
-                    puntaje = puntaje - 30
+                    puntaje = puntaje - 50
                     print(f'Tu contraseña ha sido filtrada {e[tope + 1:]} veces')
                     fil.append(passwd)
 
