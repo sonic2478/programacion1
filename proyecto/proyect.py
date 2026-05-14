@@ -45,25 +45,28 @@ while True:
             if len(coincidencias) > 0:
                 puntaje = puntaje - 10
 
-            for c in passwd:
-                if puntaje < 100:     
-                    if c in dec:
-                        puntaje = puntaje + 10
-                else:
-                    puntaje = 100
-                if puntaje < 100:
-                    if c in abc:
-                        puntaje = puntaje + 10
-                else:
-                    puntaje = 100
-                if puntaje < 100:
-                    if c in specials:
-                        puntaje = puntaje + 20
-                if len(passwd) > 12:
-                    if puntaje < 100:
-                        puntaje = puntaje + 20
+            if puntaje < 100:     
+                if re.search(r'[a-z]', passwd) or re.search(r'[A-Z]', passwd):
+                    puntaje = puntaje + 10
                 else:
                     puntaje = puntaje - 10
+            else:
+                puntaje = 100
+            if puntaje < 100:
+                if re.search(r'[0-9]', passwd):
+                    puntaje = puntaje + 10
+                else:
+                    puntaje = puntaje - 10
+            else:
+                puntaje = 100
+            if puntaje < 100:
+                if re.search(r'[^a-zA-Z0-9]', passwd):
+                    puntaje = puntaje + 20
+            if len(passwd) > 12:
+                if puntaje < 100:
+                    puntaje = puntaje + 20
+            else:
+                puntaje = puntaje - 10
 
             if puntaje > 100:
                 puntaje = 100
